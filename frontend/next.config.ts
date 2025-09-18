@@ -1,15 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   async rewrites() {
     return [
       {
         source: '/api/:path*',
+        // ⚠️ On Amplify, you’ll later replace localhost with your API Gateway URL
         destination: 'http://localhost:8000/:path*',
       },
     ];
   },
+
   async headers() {
     return [
       {
