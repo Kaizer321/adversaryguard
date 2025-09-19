@@ -200,10 +200,6 @@ Evaluate model robustness on synthetic MNIST data.
 
 ## Output Screenshots
 
-### Main Interface
-![Main Interface](screenshots/main_interface.png)
-*The main user interface showing upload area and parameter controls*
-
 ### Original vs Adversarial Comparison
 ![Adversarial Attack Result](https://github.com/Kaizer321/adversaryguard/blob/main/Demo.png)
 *Comparison showing original image (predicted as "2") vs adversarial image (predicted as "2") with ε=0.1*
